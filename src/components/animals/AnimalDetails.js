@@ -5,11 +5,7 @@ import dog from "./DogIcon.png"
 
 export default class AnimalDetail extends Component {
   render() {
-    /*
-        Using the route parameter, find the animal that the
-        user clicked on by looking at the `this.props.animals`
-        collection that was passed down from ApplicationViews
-    */
+ 
     const animal = this.props.animals.find(a => a.id === parseInt(this.props.match.params.animalId)) || {}
 
     return (

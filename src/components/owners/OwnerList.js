@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import "./Owners.css"
+import { Link } from "react-router-dom";
 
 class OwnerList extends Component {
 
@@ -15,7 +16,8 @@ class OwnerList extends Component {
                {owner.name}
                </section> 
               <section className="ownerNumber">
-              Contact info: {owner.phone}
+               
+                  <Link className="nav-link" to={`/owners/${owner.id}`}>Details</Link>
                 <a
                   href="#" onClick={() => this.props.deleteOwner(owner.id)}
                   className="card-link">Delete</a>

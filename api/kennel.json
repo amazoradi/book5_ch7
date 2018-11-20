@@ -2,41 +2,49 @@
   "employees": [
     {
       "id": 1,
-      "name": "Jessica Younker"
+      "name": "Jessica Younker",
+      "time": "3.5 years"
     },
     {
       "id": 2,
-      "name": "Jordan Nelson"
+      "name": "Jordan Nelson",
+      "time": "3 months"
     },
     {
       "id": 3,
-      "name": "Zoe LeBlanc"
+      "name": "Zoe LeBlanc",
+      "time": "11 days"
     },
     {
       "id": 4,
-      "name": "Blaise Roberts"
+      "name": "Blaise Roberts",
+      "time": "12 years"
     }
   ],
   "locations": [
     {
       "id": 1,
       "name": "Nashville North",
-      "address": "500 Circle Way"
+      "address": "500 Circle Way",
+      "feature": "Doggie-Water-l"
     },
     {
       "id": 2,
       "name": "Nashville South",
-      "address": "10101 Binary Court"
+      "address": "10101 Binary Court",
+      "feature": "Cat Carousel"
     },
     {
       "id": 3,
       "name": "Nashville East",
-      "address": "123 Fictitious Ave N"
+      "address": "123 Fictitious Ave N",
+      "feature": "Bird Mansion"
     },
     {
       "id": 4,
       "name": "Nashville West",
-      "address": "999 Imagiation Station S"
+      "address": "999 Imagiation Station S",
+      "feature": "A literal Fox Hole"
     }
   ],
   "animals": [

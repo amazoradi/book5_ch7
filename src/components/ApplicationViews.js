@@ -10,6 +10,10 @@ import EmployeeManager from "../modules/EmployeeManager"
 import OwnerManager from "../modules/OwnerManager"
 import AnimalOwnersManager from "../modules/AnimalOwnersManager"
 import AnimalDetails from './animals/AnimalDetails'
+import EmployeeDetails from './employee/EmployeeDetails'
+import LocationDetails from './locations/LocationDetails'
+import OwnerDetails from './owners/OwnerDetails'
+
 
 
 
@@ -80,6 +84,15 @@ export default class ApplicationViews extends Component {
         }} />
         <Route path="/animals/:animalId(\d+)" render={(props) => {
           return <AnimalDetails {...props} deleteAnimal={this.deleteAnimal} animals={this.state.animals} />
+        }} />
+        <Route path="/employees/:employeeId(\d+)" render={(props) => {
+          return <EmployeeDetails {...props} employees={this.state.employees} fireEmployee={this.fireEmployee} />
+        }} />
+        <Route path="/locations/:locationId(\d+)" render={(props) => {
+          return <LocationDetails {...props} locations={this.state.locations} />
+        }} />
+        <Route path="/owners/:ownerId(\d+)" render={(props) => {
+          return <OwnerDetails {...props} owners={this.state.owners} deleteOwner={this.deleteOwner} />
         }} />
       </React.Fragment>
     )
